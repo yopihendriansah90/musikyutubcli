@@ -12,12 +12,21 @@ Aplikasi pemutar musik/video YouTube berbasis terminal dengan Python3.
 
 Pilih salah satu cara di bawah sesuai OS.
 
+### Python (venv + pip)
+
+```
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -U pip
+python3 -m pip install -r requirements.txt
+```
+
 ### Ubuntu/Debian
 
 ```
 sudo apt update
 sudo apt install -y mpv
-python3 -m pip install -U yt-dlp
+python3 -m pip install -r requirements.txt
 ```
 
 ### Arch Linux
@@ -29,14 +38,15 @@ sudo pacman -S --noconfirm mpv yt-dlp
 ### macOS (Homebrew)
 
 ```
-brew install mpv yt-dlp
+brew install mpv
+python3 -m pip install -r requirements.txt
 ```
 
 ### Windows (winget)
 
 ```
-winget install --id=yt-dlp.yt-dlp -e
 winget install --id=mpv.mpv -e
+py -m pip install -r requirements.txt
 ```
 
 ## Menjalankan
